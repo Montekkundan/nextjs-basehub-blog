@@ -1,0 +1,134 @@
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-3xl: 1920px;
+
+  --color-brand-w1: #e6e6e6;
+  --color-brand-w2: #c4c4c4;
+  --color-brand-g1: #666666;
+  --color-brand-g2: #2e2e2e;
+  --color-brand-k: #000000;
+  --color-brand-o: #00cc7a; 
+  --color-brand-o2: #00b36b; 
+  --color-brand-r: #e60002;
+  --color-brand-r2: #ff4d4d;
+  --color-brand-y: #ffcd1a;
+  --color-brand-g: #00ff9b;
+  --color-brand-white: #ffffff;
+
+  --text-blog: 1rem;
+  --text-blog--line-height: 1.5rem;
+  --text-blog--letter-spacing: 0em;
+  --text-blog--font-weight: 500;
+  --text-f-h0: 6.125rem;
+  --text-f-h0--line-height: 5.5rem;
+  --text-f-h0--letter-spacing: -0.04em;
+  --text-f-h0--font-weight: 600;
+  --text-f-h0-mobile: 2.875rem;
+  --text-f-h0-mobile--line-height: 2.45rem;
+  --text-f-h0-mobile--letter-spacing: -0.04em;
+  --text-f-h0-mobile--font-weight: 600;
+  --text-f-h1: 4.75rem;
+  --text-f-h1--line-height: 4.25rem;
+  --text-f-h1--letter-spacing: -0.04em;
+  --text-f-h1--font-weight: 600;
+  --text-f-h1-mobile: 1.75rem;
+  --text-f-h1-mobile--line-height: 2.25rem;
+  --text-f-h1-mobile--letter-spacing: -0.03em;
+  --text-f-h1-mobile--font-weight: 600;
+  --text-f-h2: 2.375rem;
+  --text-f-h2--line-height: 2.25rem;
+  --text-f-h2--letter-spacing: -0.04em;
+  --text-f-h2--font-weight: 600;
+  --text-f-h2-mobile: 1.5rem;
+  --text-f-h2-mobile--line-height: 1.5rem;
+  --text-f-h2-mobile--letter-spacing: -0.03em;
+  --text-f-h2-mobile--font-weight: 600;
+  --text-f-h3: 1.5rem;
+  --text-f-h3--line-height: 1.5rem;
+  --text-f-h3--letter-spacing: -0.03em;
+  --text-f-h3--font-weight: 600;
+  --text-f-h3-mobile: 1.25rem;
+  --text-f-h3-mobile--line-height: 1.25rem;
+  --text-f-h3-mobile--letter-spacing: -0.03em;
+  --text-f-h3-mobile--font-weight: 600;
+  --text-f-h4: 1.25rem;
+  --text-f-h4--line-height: 1.25rem;
+  --text-f-h4--letter-spacing: -0.02em;
+  --text-f-h4--font-weight: 600;
+  --text-f-h4-mobile: 0.9375rem;
+  --text-f-h4-mobile--line-height: 1rem;
+  --text-f-h4-mobile--letter-spacing: -0.02em;
+  --text-f-h4-mobile--font-weight: 600;
+  --text-f-p: 0.8125rem;
+  --text-f-p--line-height: 1rem;
+  --text-f-p--letter-spacing: 0em;
+  --text-f-p--font-weight: 600;
+  --text-f-p-mobile: 0.75rem;
+  --text-f-p-mobile--line-height: 1rem;
+  --text-f-p-mobile--letter-spacing: 0em;
+  --text-f-p-mobile--font-weight: 600;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+ 
+  --z-index-navbar: 1000;
+
+}
+
+@utility grid-layout {
+  @apply mx-auto grid w-full max-w-full grid-cols-4 gap-3 px-4 lg:grid-cols-12;
+}
+
+
+html {
+  @apply scroll-smooth;
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-brand-k font-sans antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+*::selection {
+  @apply bg-brand-o text-brand-k;
+}
+
+img {
+  @apply select-none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+
+/* tweet component */
+
+.react-tweet-theme {
+  --tweet-bg-color: var(--color-brand-k) !important;
+  --tweet-bg-color-hover: rgba(255, 255, 255, 0.05) !important;
+  --tweet-border: 1px solid var(--color-brand-g2) !important;
+  --tweet-color-blue-secondary-hover: rgba(255, 255, 255, 0.05) !important;
+  --tweet-skeleton-gradient: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  ) !important;
+
+  max-width: 100% !important;
+  border-radius: 0 !important;
+
+  & div[class*="media"],
+  & div[class*="replies"] {
+    border-radius: 0 !important;
+
+    & > a {
+      border-radius: 0 !important;
+    }
+  }
+}
