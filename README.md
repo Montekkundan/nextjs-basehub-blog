@@ -1,3 +1,7 @@
+# Youtube Video
+
+[![YouTube Video](https://img.youtube.com/vi/716Pud1YHMw/0.jpg)](https://www.youtube.com/watch?v=716Pud1YHMw)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
